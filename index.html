@@ -8,16 +8,16 @@
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2307131f'/%3E%3Cpath d='M32 9c9 11 16 20 16 30a16 16 0 0 1-32 0c0-10 7-19 16-30z' fill='%232fd6c4'/%3E%3Cpath d='M22 40c7 4 14 4 21-1' fill='none' stroke='%23f4fbf9' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
   <style>
     :root {
-      --ink: #07131f;
-      --panel: #0c1d2a;
-      --paper: #f7fbf9;
-      --muted: #6a7781;
-      --line: #d8e4e0;
-      --water: #1bb7c9;
-      --leaf: #58b368;
-      --gold: #f4b860;
+      --ink: #13294b;
+      --panel: #0d1b32;
+      --paper: #f6faf7;
+      --muted: #60717b;
+      --line: #d7e5e1;
+      --water: #00a3ad;
+      --leaf: #4c956c;
+      --gold: #ff5f05;
       --white: #ffffff;
-      --shadow: 0 24px 70px rgba(7, 19, 31, .14);
+      --shadow: 0 24px 70px rgba(19, 41, 75, .15);
     }
 
     * { box-sizing: border-box; }
@@ -45,7 +45,7 @@
       gap: 1rem;
       padding: .85rem clamp(1rem, 3vw, 3rem);
       color: var(--white);
-      background: rgba(7, 19, 31, .84);
+      background: rgba(19, 41, 75, .9);
       border-bottom: 1px solid rgba(255, 255, 255, .12);
       backdrop-filter: blur(18px);
     }
@@ -59,13 +59,21 @@
       text-decoration: none;
     }
 
+    .brand img {
+      width: 6.8rem;
+      height: auto;
+      padding: .2rem .45rem;
+      background: var(--white);
+      border-radius: .35rem;
+    }
+
     .mark {
       display: grid;
       place-items: center;
       width: 2.1rem;
       height: 2.1rem;
       color: var(--ink);
-      background: linear-gradient(135deg, var(--water), #9ff2de);
+      background: linear-gradient(135deg, var(--gold), #ffd0b8);
       border-radius: 50%;
       font-size: .9rem;
     }
@@ -89,7 +97,9 @@
       position: relative;
       overflow: hidden;
       color: var(--white);
-      background: linear-gradient(135deg, #07131f 0%, #0d3040 52%, #0c503e 100%);
+      background:
+        linear-gradient(135deg, rgba(19, 41, 75, .94) 0%, rgba(16, 80, 96, .92) 54%, rgba(34, 100, 62, .92) 100%),
+        url("https://static.wixstatic.com/media/6f8f9b_3a8fd31e9fce4e0ca3c35cbf4b732f13~mv2.webp/v1/fill/w_840,h_305,al_c,lg_1,q_80,enc_avif,quality_auto/6f8f9b_3a8fd31e9fce4e0ca3c35cbf4b732f13~mv2.webp") center / cover;
     }
 
     .hero::after {
@@ -177,8 +187,8 @@
 
     .button.primary {
       color: var(--ink);
-      background: var(--water);
-      border-color: var(--water);
+      background: var(--gold);
+      border-color: var(--gold);
     }
 
     .button.secondary { color: var(--white); background: rgba(255, 255, 255, .08); }
@@ -204,6 +214,27 @@
 
     .profile-card strong { display: block; font-size: 1.25rem; }
     .profile-card span { color: rgba(255, 255, 255, .72); }
+
+    .illinois-lockup {
+      display: inline-flex;
+      align-items: center;
+      gap: .75rem;
+      margin-top: 1.5rem;
+      padding: .75rem .85rem;
+      color: var(--ink);
+      background: rgba(255, 255, 255, .94);
+      border-radius: .55rem;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, .16);
+    }
+
+    .illinois-lockup img { width: 8.5rem; }
+    .illinois-lockup span {
+      max-width: 14rem;
+      color: #355067;
+      font-size: .9rem;
+      font-weight: 800;
+      line-height: 1.25;
+    }
 
     section {
       padding: clamp(4rem, 8vw, 7rem) clamp(1rem, 5vw, 5rem);
@@ -253,7 +284,11 @@
     .about-card b { display: block; margin-bottom: .6rem; font-size: 1.05rem; }
     .about-card p { margin: 0; color: var(--muted); line-height: 1.65; }
 
-    .projects { background: #eef7f4; }
+    .projects {
+      background:
+        linear-gradient(90deg, rgba(255, 95, 5, .08), transparent 24%),
+        #eef7f4;
+    }
     .project-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -308,7 +343,7 @@
 
     .contact {
       color: var(--white);
-      background: var(--ink);
+      background: linear-gradient(135deg, var(--ink), #0f493d);
     }
 
     .contact-wrap {
@@ -362,7 +397,7 @@
       gap: 1rem;
       padding: 1.4rem clamp(1rem, 5vw, 5rem);
       color: rgba(255, 255, 255, .68);
-      background: #050c13;
+      background: #071525;
       font-size: .9rem;
     }
 
@@ -377,6 +412,7 @@
       }
       .hero-inner { min-height: auto; }
       .profile-card { min-height: 27rem; }
+      .illinois-lockup { align-items: flex-start; flex-direction: column; }
       .section-head { display: block; }
       .section-head p { margin-top: 1rem; }
       footer { flex-direction: column; }
@@ -386,7 +422,7 @@
 <body>
   <header class="site-header">
     <a class="brand" href="#top" aria-label="Sachi's Portfolio home">
-      <span class="mark">ST</span>
+      <img src="https://static.wixstatic.com/media/6f8f9b_8c6d0bd3441748e181d0ad957ebbf1e7~mv2.png/v1/fill/w_289,h_85,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/6f8f9b_8c6d0bd3441748e181d0ad957ebbf1e7~mv2.png" alt="University of Illinois Urbana-Champaign">
       <span>Sachi's Portfolio</span>
     </a>
     <nav aria-label="Main navigation">
@@ -407,6 +443,10 @@
           <div class="hero-actions">
             <a class="button primary" href="#projects">View Projects</a>
             <a class="button secondary" href="mailto:sthak36@illinois.edu">Connect</a>
+          </div>
+          <div class="illinois-lockup">
+            <img src="https://static.wixstatic.com/media/6f8f9b_8c6d0bd3441748e181d0ad957ebbf1e7~mv2.png/v1/fill/w_578,h_170,al_c,lg_1,q_85,enc_avif,quality_auto/6f8f9b_8c6d0bd3441748e181d0ad957ebbf1e7~mv2.png" alt="University of Illinois Urbana-Champaign">
+            <span>Environmental Engineering portfolio rooted in Illinois engineering work.</span>
           </div>
         </div>
         <aside class="profile-card" aria-label="Sachi portrait">
