@@ -40,7 +40,7 @@
         group.append(titleLabel, summaryLabel); form.append(group);
       });
     };
-    fetch("content.json").then((response) => response.json()).then((data) => { content = data; render(); });
+    fetch("content.json", { cache: "no-store" }).then((response) => response.json()).then((data) => { content = data; render(); });
     document.querySelector("#preview").addEventListener("click", () => { localStorage.setItem("sachi-portfolio-draft", JSON.stringify(content)); open("index.html?preview", "_blank"); });
     document.querySelector("#download").addEventListener("click", () => { const link = document.createElement("a"); link.href = URL.createObjectURL(new Blob([JSON.stringify(content, null, 2)], { type:"application/json" })); link.download = "content.json"; link.click(); URL.revokeObjectURL(link.href); });
   </script>

@@ -191,7 +191,7 @@ function wireEasterEggs() {
   });
 }
 
-fetch("content.json")
+fetch("content.json", { cache: "no-store" })
   .then((response) => response.json())
   .then((content) => {
     if (new URLSearchParams(location.search).has("preview")) {
