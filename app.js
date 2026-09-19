@@ -1,8 +1,32 @@
 const $ = (selector) => document.querySelector(selector);
+const themeStorageKey = "sachi-portfolio-theme";
 
 function setText(selector, value) {
   const el = $(selector);
   if (el) el.textContent = value || "";
+}
+
+function applyTheme(theme) {
+  document.documentElement.dataset.theme = theme;
+  const toggle = $(".theme-toggle");
+  if (!toggle) return;
+  const isDark = theme === "dark";
+  toggle.setAttribute("aria-pressed", String(isDark));
+  toggle.setAttribute("aria-label", `Switch to ${isDark ? "light" : "dark"} mode`);
+  $(".theme-icon").textContent = isDark ? "☀" : "☾";
+  $(".theme-label").textContent = isDark ? "Light" : "Dark";
+}
+
+function wireThemeToggle() {
+  const savedTheme = localStorage.getItem(themeStorageKey);
+  const systemTheme = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  applyTheme(savedTheme || systemTheme);
+
+  $(".theme-toggle")?.addEventListener("click", () => {
+    const nextTheme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+    localStorage.setItem(themeStorageKey, nextTheme);
+    applyTheme(nextTheme);
+  });
 }
 
 function renderCards(items) {
@@ -100,3 +124,4 @@ fetch("content.json")
   .catch(() => document.body.classList.add("content-error"));
 
 wireEasterEggs();
+wireThemeToggle();

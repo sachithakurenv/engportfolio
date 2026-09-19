@@ -17,7 +17,29 @@
       --leaf: #4c956c;
       --gold: #ff5f05;
       --white: #ffffff;
+      --card: rgba(255, 255, 255, .78);
+      --header: rgba(19, 41, 75, .9);
+      --projects-bg: #eef7f4;
+      --footer: #071525;
       --shadow: 0 24px 70px rgba(19, 41, 75, .15);
+      color-scheme: light;
+    }
+
+    [data-theme="dark"] {
+      --ink: #e9f3f2;
+      --panel: #081422;
+      --paper: #07111d;
+      --muted: #aab9bd;
+      --line: rgba(185, 218, 210, .18);
+      --water: #38d5df;
+      --leaf: #7bd694;
+      --gold: #ff7a2b;
+      --card: rgba(11, 28, 43, .82);
+      --header: rgba(7, 17, 29, .92);
+      --projects-bg: #0a1925;
+      --footer: #040910;
+      --shadow: 0 24px 70px rgba(0, 0, 0, .32);
+      color-scheme: dark;
     }
 
     * { box-sizing: border-box; }
@@ -45,7 +67,7 @@
       gap: 1rem;
       padding: .85rem clamp(1rem, 3vw, 3rem);
       color: var(--white);
-      background: rgba(19, 41, 75, .9);
+      background: var(--header);
       border-bottom: 1px solid rgba(255, 255, 255, .12);
       backdrop-filter: blur(18px);
     }
@@ -84,6 +106,12 @@
       font-size: .9rem;
     }
 
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: .6rem;
+    }
+
     nav a {
       padding: .55rem .8rem;
       color: rgba(255, 255, 255, .78);
@@ -92,6 +120,25 @@
     }
 
     nav a:hover { color: var(--white); background: rgba(255, 255, 255, .1); }
+
+    .theme-toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: .45rem;
+      min-height: 2.35rem;
+      padding: .45rem .7rem;
+      color: var(--white);
+      background: rgba(255, 255, 255, .1);
+      border: 1px solid rgba(255, 255, 255, .2);
+      border-radius: 999px;
+      cursor: pointer;
+      font: inherit;
+      font-size: .9rem;
+      font-weight: 800;
+    }
+
+    .theme-toggle:hover { background: rgba(255, 255, 255, .16); }
+    .theme-icon { width: 1.1rem; text-align: center; }
 
     .hero {
       position: relative;
@@ -274,7 +321,7 @@
     .about-card,
     .project,
     .contact-panel {
-      background: rgba(255, 255, 255, .74);
+      background: var(--card);
       border: 1px solid var(--line);
       border-radius: .75rem;
       box-shadow: 0 18px 50px rgba(7, 19, 31, .08);
@@ -287,7 +334,7 @@
     .projects {
       background:
         linear-gradient(90deg, rgba(255, 95, 5, .08), transparent 24%),
-        #eef7f4;
+        var(--projects-bg);
     }
     .project-grid {
       display: grid;
@@ -372,7 +419,7 @@
       gap: .75rem;
       padding: 1.2rem;
       color: var(--ink);
-      background: var(--white);
+      background: var(--card);
     }
 
     .contact-row {
@@ -428,12 +475,13 @@
       gap: 1rem;
       padding: 1.4rem clamp(1rem, 5vw, 5rem);
       color: rgba(255, 255, 255, .68);
-      background: #071525;
+      background: var(--footer);
       font-size: .9rem;
     }
 
     @media (max-width: 820px) {
       .site-header { align-items: flex-start; flex-direction: column; }
+      .header-actions { width: 100%; align-items: flex-start; justify-content: space-between; }
       nav { width: 100%; overflow-x: auto; padding-bottom: .25rem; }
       .hero-inner,
       .about-grid,
@@ -457,11 +505,17 @@
       <img src="https://static.wixstatic.com/media/6f8f9b_8c6d0bd3441748e181d0ad957ebbf1e7~mv2.png/v1/fill/w_289,h_85,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/6f8f9b_8c6d0bd3441748e181d0ad957ebbf1e7~mv2.png" alt="University of Illinois Urbana-Champaign">
       <span data-site-title>Sachi's Portfolio</span>
     </a>
-    <nav aria-label="Main navigation">
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="header-actions">
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+        <span class="theme-icon" aria-hidden="true">◐</span>
+        <span class="theme-label">Theme</span>
+      </button>
+    </div>
   </header>
 
   <main id="top">
