@@ -27,6 +27,7 @@
   "projects": [
     {
       "category": "Geospatial and energy systems",
+      "slug": "distributed-energy-resources",
       "title": "Geospatial & Power Grid Analysis of Distributed Energy Resources",
       "image": "https://static.wixstatic.com/media/6f8f9b_fbf4d2438aca406392bae2c9f8ea1322~mv2.png/v1/fill/w_1279,h_607,al_c,q_90,enc_avif,quality_auto/6f8f9b_fbf4d2438aca406392bae2c9f8ea1322~mv2.png",
       "url": "https://sthak36.wixsite.com/myenvengportfolio/team-3",
@@ -46,8 +47,17 @@
         }
       ],
       "gallery": [
-        "https://static.wixstatic.com/media/6f8f9b_fbf4d2438aca406392bae2c9f8ea1322~mv2.png/v1/fill/w_1279,h_607,al_c,q_90,enc_avif,quality_auto/6f8f9b_fbf4d2438aca406392bae2c9f8ea1322~mv2.png",
-        "https://static.wixstatic.com/media/6f8f9b_f735d9654c2b42958ecb73f959e32b54~mv2.png/v1/fill/w_1370,h_650,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/6f8f9b_f735d9654c2b42958ecb73f959e32b54~mv2.png"
+        { "src": "https://static.wixstatic.com/media/6f8f9b_fbf4d2438aca406392bae2c9f8ea1322~mv2.png", "alt": "DER Power BI dashboard" },
+        { "src": "https://static.wixstatic.com/media/6f8f9b_f735d9654c2b42958ecb73f959e32b54~mv2.png", "alt": "DER project visual" },
+        { "src": "https://static.wixstatic.com/media/6f8f9b_3076d649fcb34334ab10286a69385f48~mv2.png", "alt": "DER impacts map" },
+        { "src": "https://static.wixstatic.com/media/6f8f9b_ab5efb8488dc49789a60eb6244c3e451~mv2.png", "alt": "Load and peak offset map" },
+        { "src": "https://static.wixstatic.com/media/6f8f9b_bee59051b178446db9239ce7bc7d3286~mv2.png", "alt": "EIEC communities map" },
+        { "src": "https://static.wixstatic.com/media/6f8f9b_4507b82ae085488b93ce93f521f1505f~mv2.png", "alt": "Community solar installations map" },
+        { "src": "https://static.wixstatic.com/media/6f8f9b_8b6809f0a4d644c0b869c1cf16e32e58~mv2.png", "alt": "Feeder density hex map" },
+        { "src": "https://static.wixstatic.com/media/6f8f9b_f0e242e617504900b352c1eabcd66c51~mv2.png", "alt": "DER distribution by size and installation year" },
+        { "src": "https://static.wixstatic.com/media/6f8f9b_2f03b50853854724922de101db120a9e~mv2.png", "alt": "ComEd methodology and findings report" },
+        { "src": "https://static.wixstatic.com/media/6f8f9b_0fdb31a7a96d437a9064957e26ce637c~mv2.png", "alt": "ComEd methodology and findings report" },
+        { "src": "https://static.wixstatic.com/media/6f8f9b_0afd6fb8ebf9452db266d059cd86724e~mv2.png", "alt": "ComEd methodology and findings report" }
       ],
       "links": [
         {
@@ -58,6 +68,7 @@
     },
     {
       "category": "CAD modeling",
+      "slug": "tractor-remodeling",
       "title": "Tractor Remodeling with Autodesk Fusion",
       "image": "https://static.wixstatic.com/media/6f8f9b_d371c0e0140f40b0950434848558e610~mv2.jpg/v1/crop/x_30,y_142,w_1440,h_801/fill/w_1370,h_650,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/tractor.jpg",
       "url": "https://sthak36.wixsite.com/myenvengportfolio/portfolio-collections/my-portfolio",
@@ -85,8 +96,22 @@
         }
       ],
       "gallery": [
-        "https://static.wixstatic.com/media/6f8f9b_d371c0e0140f40b0950434848558e610~mv2.jpg/v1/crop/x_30,y_142,w_1440,h_801/fill/w_1370,h_650,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/tractor.jpg",
-        "https://static.wixstatic.com/media/6f8f9b_d72321916f764a8d8a964a1329fb0640~mv2.jpg/v1/crop/x_370,y_0,w_2141,h_1226/fill/w_1370,h_670,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/full%20asembly%20render_edited.jpg"
+        { "src": "https://static.wixstatic.com/media/6f8f9b_d371c0e0140f40b0950434848558e610~mv2.jpg", "alt": "Tractor reference" },
+        { "src": "https://static.wixstatic.com/media/6f8f9b_d72321916f764a8d8a964a1329fb0640~mv2.jpg", "alt": "Full tractor assembly render" },
+        { "src": "https://static.wixstatic.com/media/6f8f9b_2b2da835cb404952b21c7d9fb5b374ec~mv2.png", "alt": "Tractor assembly deliverable" },
+        { "src": "https://static.wixstatic.com/media/6f8f9b_3685ec3cac7f44e288b59c9e99b00fd2~mv2.png", "alt": "Cart bottom render" },
+        { "src": "https://static.wixstatic.com/media/6f8f9b_aa62e2109d7147d59ee56fb2f523a7a9~mv2.png", "alt": "Cart bottom render alternate" },
+        { "src": "https://static.wixstatic.com/media/6f8f9b_1f369a06769047ceb35128c7246432ee~mv2.png", "alt": "Tractor project deliverable" },
+        { "src": "https://static.wixstatic.com/media/6f8f9b_563af79f4855408097b765dbac1625ff~mv2.jpeg", "alt": "Tractor project deliverable" },
+        { "src": "https://static.wixstatic.com/media/6f8f9b_7acd65fb70454f8e96143e21656d551e~mv2.jpg", "alt": "Tractor project deliverable" },
+        { "src": "https://static.wixstatic.com/media/6f8f9b_955a61f993e04ad59d1c2420031be498~mv2.png", "alt": "Tractor project deliverable" },
+        { "src": "https://static.wixstatic.com/media/6f8f9b_a88ed9e098ce441597c0b8039a1d38be~mv2.jpg", "alt": "Tractor project deliverable" },
+        { "src": "https://static.wixstatic.com/media/6f8f9b_d41b443c136840e782ba27055fb45f68~mv2.png", "alt": "Tractor project deliverable" },
+        { "src": "https://static.wixstatic.com/media/6f8f9b_d6300bd6226e4172b1aed1dd89f9617ef002.jpg", "alt": "Tractor project deliverable" },
+        { "src": "https://static.wixstatic.com/media/6f8f9b_8c5bd6a688ec4c219e0fa0a378949623~mv2.jpg", "alt": "Tractor project deliverable" },
+        { "src": "https://static.wixstatic.com/media/6f8f9b_97895314d1524a7ebfae07fc690072ee~mv2.png", "alt": "LDPE stress analysis" },
+        { "src": "https://static.wixstatic.com/media/6f8f9b_49d8d11d474142218b02a54b474ed1ef~mv2.png", "alt": "Wrought iron stress analysis" },
+        { "src": "https://static.wixstatic.com/media/6f8f9b_6187d4ff81ea46adbbecd9b81d479437~mv2.png", "alt": "Wrought iron displacement study" }
       ],
       "links": [
         {
@@ -95,12 +120,13 @@
         },
         {
           "label": "View report",
-          "url": "https://c450eb95-d720-4328-a51b-3288cb87ff97.filesusr.com/ugd/6f8f9b_6ce6ee6ac36b43f99888b7be4988ab05.pdf"
+          "url": "https://c450eb95-d720-4328-a51b-3288cb87ff97.filesusr.com/ugd/6f8f9b_2f9a2a654fdb4ed5a40e229158978e1e.pdf"
         }
       ]
     },
     {
       "category": "Campus infrastructure",
+      "slug": "north-quad-rain-garden",
       "title": "Feasability Study on the North Engineering Quad at University of Illinois",
       "image": "https://static.wixstatic.com/media/6f8f9b_669d426bfcf84d89980cf7458e6bf7c8~mv2.jpg/v1/fill/w_720,h_333,al_c,lg_1,q_80,enc_avif,quality_auto/6f8f9b_669d426bfcf84d89980cf7458e6bf7c8~mv2.jpg",
       "url": "https://sthak36.wixsite.com/myenvengportfolio/portfolio-collections/my-portfolio/project-title-3",
@@ -133,6 +159,14 @@
           "url": "https://sthak36.wixsite.com/myenvengportfolio/portfolio-collections/my-portfolio/project-title-3"
         },
         {
+          "label": "Wix source page 2",
+          "url": "https://sthak36.wixsite.com/myenvengportfolio/portfolio-collections/my-portfolio/project-title-2"
+        },
+        {
+          "label": "Wix source page 5",
+          "url": "https://sthak36.wixsite.com/myenvengportfolio/portfolio-collections/my-portfolio/project-title-5"
+        },
+        {
           "label": "View report",
           "url": "https://c450eb95-d720-4328-a51b-3288cb87ff97.filesusr.com/ugd/6f8f9b_6ce6ee6ac36b43f99888b7be4988ab05.pdf"
         }
@@ -140,6 +174,7 @@
     },
     {
       "category": "Excel analysis",
+      "slug": "excel-engineering-analysis",
       "title": "Industry Application of Excel Features",
       "image": "https://static.wixstatic.com/media/6f8f9b_8e8129540c88449eb38fcea746a35c53~mv2.png/v1/fill/w_720,h_359,al_c,lg_1,q_85,enc_avif,quality_auto/6f8f9b_8e8129540c88449eb38fcea746a35c53~mv2.png",
       "url": "https://sthak36.wixsite.com/myenvengportfolio/excel",
@@ -159,7 +194,8 @@
         }
       ],
       "gallery": [
-        "https://static.wixstatic.com/media/6f8f9b_8e8129540c88449eb38fcea746a35c53~mv2.png/v1/fill/w_720,h_359,al_c,lg_1,q_85,enc_avif,quality_auto/6f8f9b_8e8129540c88449eb38fcea746a35c53~mv2.png"
+        { "src": "https://static.wixstatic.com/media/6f8f9b_8e8129540c88449eb38fcea746a35c53~mv2.png", "alt": "Excel analysis project visual" },
+        { "src": "https://static.wixstatic.com/media/6f8f9b_574c765f25a44527a2198083505c9216~mv2.png", "alt": "Hydropower and solar energy comparison" }
       ],
       "links": [
         {
@@ -178,6 +214,7 @@
     },
     {
       "category": "Autodesk Fusion",
+      "slug": "fusion-wind-turbines",
       "title": "Modeling Turbines on Autodesk Fusion",
       "image": "https://static.wixstatic.com/media/6f8f9b_e893f202c6d744deb641cbbaacf7c8a1~mv2.png/v1/fill/w_1370,h_634,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Screenshot%202025-12-07%20at%209_30_30%E2%80%AFAM.png",
       "url": "https://sthak36.wixsite.com/myenvengportfolio/s-projects-basic",
@@ -197,7 +234,10 @@
         }
       ],
       "gallery": [
-        "https://static.wixstatic.com/media/6f8f9b_e893f202c6d744deb641cbbaacf7c8a1~mv2.png/v1/fill/w_1370,h_634,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Screenshot%202025-12-07%20at%209_30_30%E2%80%AFAM.png"
+        { "src": "https://static.wixstatic.com/media/6f8f9b_e893f202c6d744deb641cbbaacf7c8a1~mv2.png", "alt": "Fusion turbine project visual" },
+        { "src": "https://static.wixstatic.com/media/6f8f9b_f22f2ea564a54652aeb7b5a8aa059a50~mv2.png", "alt": "Horizontal axis wind turbine" },
+        { "src": "https://static.wixstatic.com/media/6f8f9b_569d93e2ffbd4da7b15ac413c359e574~mv2.png", "alt": "Spiral wind turbine" },
+        { "src": "https://static.wixstatic.com/media/6f8f9b_78c02d68eb2e489ebb5f4f7fd552df68~mv2.png", "alt": "Vertical axis wind turbine" }
       ],
       "links": [
         {
@@ -208,6 +248,7 @@
     },
     {
       "category": "ArcGIS Pro",
+      "slug": "pm25-spatiotemporal-analysis",
       "title": "Spatiotemporal Analysis with ArcGIS Pro",
       "image": "https://static.wixstatic.com/media/6f8f9b_b687ef50c6a84c48b4c529b1bf9c15d4~mv2.png/v1/crop/x_0,y_269,w_2479,h_1151/fill/w_1396,h_648,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Screenshot%202026-01-07%20at%208_59_edited.png",
       "url": "https://sthak36.wixsite.com/myenvengportfolio/copy-of-excel",
@@ -227,7 +268,9 @@
         }
       ],
       "gallery": [
-        "https://static.wixstatic.com/media/6f8f9b_b687ef50c6a84c48b4c529b1bf9c15d4~mv2.png/v1/crop/x_0,y_269,w_2479,h_1151/fill/w_1396,h_648,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Screenshot%202026-01-07%20at%208_59_edited.png"
+        { "src": "https://static.wixstatic.com/media/6f8f9b_b687ef50c6a84c48b4c529b1bf9c15d4~mv2.png", "alt": "PM2.5 ArcGIS analysis" },
+        { "src": "https://static.wixstatic.com/media/6f8f9b_9204e0a9dc2b45888e1bb5ef6188f73a~mv2.png", "alt": "PM2.5 temporal profile chart" },
+        { "src": "https://static.wixstatic.com/media/6f8f9b_4d5ec3afa29547bcbae002240897c915~mv2.png", "alt": "PM2.5 hot spot analysis" }
       ],
       "links": [
         {

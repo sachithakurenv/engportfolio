@@ -43,6 +43,48 @@ function renderCards(items) {
   }));
 }
 
+function renderProjectDetail(project, target) {
+  for (const section of project.details || []) {
+    const heading = document.createElement("h3");
+    heading.textContent = section.heading;
+    const text = document.createElement("p");
+    text.textContent = section.text;
+    target.append(heading, text);
+  }
+
+  if (project.gallery?.length) {
+    const gallery = document.createElement("div");
+    gallery.className = "project-gallery";
+    for (const item of project.gallery) {
+      const src = typeof item === "string" ? item : item.src;
+      const imageLink = document.createElement("a");
+      imageLink.href = src;
+      imageLink.target = "_blank";
+      imageLink.rel = "noreferrer";
+      const image = document.createElement("img");
+      image.src = src;
+      image.alt = typeof item === "string" ? "Project visual" : item.alt || "Project visual";
+      imageLink.append(image);
+      gallery.append(imageLink);
+    }
+    target.append(gallery);
+  }
+
+  if (project.links?.length) {
+    const links = document.createElement("div");
+    links.className = "project-links";
+    for (const item of project.links) {
+      const link = document.createElement("a");
+      link.href = item.url;
+      link.target = "_blank";
+      link.rel = "noreferrer";
+      link.textContent = item.label;
+      links.append(link);
+    }
+    target.append(links);
+  }
+}
+
 function renderProjects(projects) {
   const grid = $("#project-grid");
   grid.replaceChildren(...projects.map((project) => {
@@ -66,51 +108,32 @@ function renderProjects(projects) {
     summaryText.className = "project-summary";
     summaryText.textContent = project.summary || "";
 
-    const details = document.createElement("details");
-    const summary = document.createElement("summary");
-    summary.textContent = "Open full project details";
-    const detailWrap = document.createElement("div");
-    detailWrap.className = "project-detail";
-
-    for (const section of project.details || []) {
-      const heading = document.createElement("h4");
-      heading.textContent = section.heading;
-      const text = document.createElement("p");
-      text.textContent = section.text;
-      detailWrap.append(heading, text);
-    }
-
-    if (project.gallery?.length) {
-      const gallery = document.createElement("div");
-      gallery.className = "project-gallery";
-      for (const src of project.gallery) {
-        const galleryImage = document.createElement("img");
-        galleryImage.src = src;
-        galleryImage.alt = "";
-        gallery.append(galleryImage);
-      }
-      detailWrap.append(gallery);
-    }
-
-    if (project.links?.length) {
-      const links = document.createElement("div");
-      links.className = "project-links";
-      for (const item of project.links) {
-        const link = document.createElement("a");
-        link.href = item.url;
-        link.target = "_blank";
-        link.rel = "noreferrer";
-        link.textContent = item.label;
-        links.append(link);
-      }
-      detailWrap.append(links);
-    }
-
-    details.append(summary, detailWrap);
-    body.append(category, title, summaryText, details);
+    const link = document.createElement("a");
+    link.className = "project-open";
+    link.href = `project.html?project=${encodeURIComponent(project.slug)}`;
+    link.textContent = "Open full project";
+    body.append(category, title, summaryText, link);
     card.append(image, body);
     return card;
   }));
+}
+
+function renderProjectPage(content) {
+  const slug = new URLSearchParams(location.search).get("project");
+  const project = content.projects.find((item) => item.slug === slug);
+  if (!project) {
+    location.replace("index.html#projects");
+    return;
+  }
+
+  document.title = `${project.title} | ${content.siteTitle}`;
+  setText("[data-project-category]", project.category);
+  setText("[data-project-title]", project.title);
+  setText("[data-project-summary]", project.summary);
+  const image = $("[data-project-image]");
+  image.src = project.image;
+  image.alt = project.title;
+  renderProjectDetail(project, $("#project-detail"));
 }
 
 function wireEasterEggs() {
@@ -157,8 +180,11 @@ fetch("content.json")
     $("[data-phone]")?.setAttribute("href", `tel:${content.phoneHref}`);
     $("[data-email]")?.setAttribute("href", `mailto:${content.email}`);
     $(".button.secondary")?.setAttribute("href", `mailto:${content.email}`);
-    renderCards(content.aboutCards);
-    renderProjects(content.projects);
+    if ($("#project-page")) renderProjectPage(content);
+    else {
+      renderCards(content.aboutCards);
+      renderProjects(content.projects);
+    }
   })
   .catch(() => document.body.classList.add("content-error"));
 
