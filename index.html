@@ -391,6 +391,37 @@
       text-transform: uppercase;
     }
 
+    .edit-ribbon {
+      position: fixed;
+      right: 1rem;
+      bottom: 1rem;
+      z-index: 30;
+      padding: .75rem .9rem;
+      color: var(--ink);
+      background: var(--gold);
+      border-radius: .5rem;
+      box-shadow: 0 20px 55px rgba(19, 41, 75, .24);
+      font-size: .9rem;
+      font-weight: 900;
+      text-decoration: none;
+    }
+
+    body.watershed-mode .hero {
+      background:
+        linear-gradient(135deg, rgba(0, 105, 130, .9), rgba(19, 41, 75, .94)),
+        url("https://static.wixstatic.com/media/6f8f9b_3a8fd31e9fce4e0ca3c35cbf4b732f13~mv2.webp/v1/fill/w_840,h_305,al_c,lg_1,q_80,enc_avif,quality_auto/6f8f9b_3a8fd31e9fce4e0ca3c35cbf4b732f13~mv2.webp") center / cover;
+    }
+
+    body.watershed-mode .project { border-color: rgba(0, 163, 173, .55); }
+    body.illini-mode .site-header,
+    body.illini-mode .edit-ribbon {
+      animation: illiniFlash .8s ease-in-out 4;
+    }
+
+    @keyframes illiniFlash {
+      50% { background: var(--gold); color: var(--ink); }
+    }
+
     footer {
       display: flex;
       justify-content: space-between;
@@ -416,6 +447,7 @@
       .section-head { display: block; }
       .section-head p { margin-top: 1rem; }
       footer { flex-direction: column; }
+      .edit-ribbon { position: static; display: block; margin: 1rem; text-align: center; }
     }
   </style>
 </head>
@@ -423,7 +455,7 @@
   <header class="site-header">
     <a class="brand" href="#top" aria-label="Sachi's Portfolio home">
       <img src="https://static.wixstatic.com/media/6f8f9b_8c6d0bd3441748e181d0ad957ebbf1e7~mv2.png/v1/fill/w_289,h_85,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/6f8f9b_8c6d0bd3441748e181d0ad957ebbf1e7~mv2.png" alt="University of Illinois Urbana-Champaign">
-      <span>Sachi's Portfolio</span>
+      <span data-site-title>Sachi's Portfolio</span>
     </a>
     <nav aria-label="Main navigation">
       <a href="#about">About</a>
@@ -436,23 +468,23 @@
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-inner">
         <div>
-          <p class="eyebrow">Environmental Engineering at the University of Illinois</p>
-          <h1 id="hero-title">Sachi's Portfolio</h1>
-          <h2>One Water, sustainable design, green infrastructure, and water treatment.</h2>
-          <p>Hello! My name is Sachi and I am studying Environmental Engineering. I am committed to developing sustainable solutions to the climate challenges we face today, with a focus on One Water within my degree.</p>
+          <p class="eyebrow" data-school>Environmental Engineering at the University of Illinois</p>
+          <h1 id="hero-title" data-site-title>Sachi's Portfolio</h1>
+          <h2 data-tagline>One Water, sustainable design, green infrastructure, and water treatment.</h2>
+          <p data-intro>Hello! My name is Sachi and I am studying Environmental Engineering. I am committed to developing sustainable solutions to the climate challenges we face today, with a focus on One Water within my degree.</p>
           <div class="hero-actions">
             <a class="button primary" href="#projects">View Projects</a>
             <a class="button secondary" href="mailto:sthak36@illinois.edu">Connect</a>
           </div>
           <div class="illinois-lockup">
             <img src="https://static.wixstatic.com/media/6f8f9b_8c6d0bd3441748e181d0ad957ebbf1e7~mv2.png/v1/fill/w_578,h_170,al_c,lg_1,q_85,enc_avif,quality_auto/6f8f9b_8c6d0bd3441748e181d0ad957ebbf1e7~mv2.png" alt="University of Illinois Urbana-Champaign">
-            <span>Environmental Engineering portfolio rooted in Illinois engineering work.</span>
+            <span data-hero-note>Environmental Engineering portfolio rooted in Illinois engineering work.</span>
           </div>
         </div>
         <aside class="profile-card" aria-label="Sachi portrait">
           <div>
-            <strong>Water Resources Engineer goal</strong>
-            <span>Sustainable design, green infrastructure, water treatment</span>
+            <strong data-profile-title>Water Resources Engineer goal</strong>
+            <span data-profile-text>Sustainable design, green infrastructure, water treatment</span>
           </div>
         </aside>
       </div>
@@ -460,101 +492,41 @@
 
     <section id="about" aria-labelledby="about-title">
       <div class="section-head">
-        <h2 id="about-title">Focused on practical climate solutions.</h2>
-        <p>Please navigate through the tabs located below this section that highlight my collaborative team projects and personal work which provide an overview of the work I have accomplished and my experiences.</p>
+        <h2 id="about-title" data-about-title>Focused on practical climate solutions.</h2>
+        <p data-about-text>Please navigate through the tabs located below this section that highlight my collaborative team projects and personal work which provide an overview of the work I have accomplished and my experiences.</p>
       </div>
-      <div class="about-grid">
-        <article class="about-card">
-          <b>Engineering Direction</b>
-          <p>My goal is to be a Water Resources Engineer, where I can continue finding solutions for sustainable design, green infrastructure and water treatment.</p>
-        </article>
-        <article class="about-card">
-          <b>Technical Toolkit</b>
-          <p>My experience with CAD, technical writing, ArcGIS Pro, Power BI and leadership in team projects show my ability to deliver and manage high quality work.</p>
-        </article>
-        <article class="about-card">
-          <b>Portfolio Guide</b>
-          <p>Scroll and click through the buttons to explore collaborative team projects and personal work.</p>
-        </article>
-      </div>
+      <div class="about-grid" id="about-cards"></div>
     </section>
 
     <section class="projects" id="projects" aria-labelledby="projects-title">
       <div class="section-head">
-        <h2 id="projects-title">Selected Work</h2>
-        <p>Geospatial analysis, CAD modeling, infrastructure feasibility, Excel applications, turbine modeling, and ArcGIS Pro analysis.</p>
+        <h2 id="projects-title" data-projects-title>Selected Work</h2>
+        <p data-projects-text>Geospatial analysis, CAD modeling, infrastructure feasibility, Excel applications, turbine modeling, and ArcGIS Pro analysis.</p>
       </div>
-      <div class="project-grid">
-        <article class="project">
-          <img src="https://static.wixstatic.com/media/6f8f9b_fbf4d2438aca406392bae2c9f8ea1322~mv2.png/v1/fill/w_1279,h_607,al_c,q_90,enc_avif,quality_auto/6f8f9b_fbf4d2438aca406392bae2c9f8ea1322~mv2.png" alt="">
-          <div class="project-body">
-            <small>Geospatial and energy systems</small>
-            <h3>Geospatial &amp; Power Grid Analysis of Distributed Energy Resources</h3>
-            <a href="https://sthak36.wixsite.com/myenvengportfolio" target="_blank" rel="noreferrer">View More</a>
-          </div>
-        </article>
-        <article class="project">
-          <img src="https://static.wixstatic.com/media/6f8f9b_d371c0e0140f40b0950434848558e610~mv2.jpg/v1/crop/x_30,y_142,w_1440,h_801/fill/w_1370,h_650,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/tractor.jpg" alt="">
-          <div class="project-body">
-            <small>CAD modeling</small>
-            <h3>Tractor Remodeling with Autodesk Fusion</h3>
-            <a href="https://sthak36.wixsite.com/myenvengportfolio" target="_blank" rel="noreferrer">View More</a>
-          </div>
-        </article>
-        <article class="project">
-          <img src="https://static.wixstatic.com/media/6f8f9b_669d426bfcf84d89980cf7458e6bf7c8~mv2.jpg/v1/fill/w_720,h_333,al_c,lg_1,q_80,enc_avif,quality_auto/6f8f9b_669d426bfcf84d89980cf7458e6bf7c8~mv2.jpg" alt="">
-          <div class="project-body">
-            <small>Campus infrastructure</small>
-            <h3>Feasability Study on the North Engineering Quad at University of Illinois</h3>
-            <a href="https://sthak36.wixsite.com/myenvengportfolio" target="_blank" rel="noreferrer">View More</a>
-          </div>
-        </article>
-        <article class="project">
-          <img src="https://static.wixstatic.com/media/6f8f9b_8e8129540c88449eb38fcea746a35c53~mv2.png/v1/fill/w_720,h_359,al_c,lg_1,q_85,enc_avif,quality_auto/6f8f9b_8e8129540c88449eb38fcea746a35c53~mv2.png" alt="">
-          <div class="project-body">
-            <small>Excel analysis</small>
-            <h3>Industry Application of Excel Features</h3>
-            <a href="https://sthak36.wixsite.com/myenvengportfolio" target="_blank" rel="noreferrer">View More</a>
-          </div>
-        </article>
-        <article class="project">
-          <img src="https://static.wixstatic.com/media/6f8f9b_e893f202c6d744deb641cbbaacf7c8a1~mv2.png/v1/fill/w_1370,h_634,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Screenshot%202025-12-07%20at%209_30_30%E2%80%AFAM.png" alt="">
-          <div class="project-body">
-            <small>Autodesk Fusion</small>
-            <h3>Modeling Turbines on Autodesk Fusion</h3>
-            <a href="https://sthak36.wixsite.com/myenvengportfolio" target="_blank" rel="noreferrer">View More</a>
-          </div>
-        </article>
-        <article class="project">
-          <img src="https://static.wixstatic.com/media/6f8f9b_b687ef50c6a84c48b4c529b1bf9c15d4~mv2.png/v1/crop/x_0,y_269,w_2479,h_1151/fill/w_1396,h_648,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Screenshot%202026-01-07%20at%208_59_edited.png" alt="">
-          <div class="project-body">
-            <small>ArcGIS Pro</small>
-            <h3>Spatiotemporal Analysis with ArcGIS Pro</h3>
-            <a href="https://sthak36.wixsite.com/myenvengportfolio" target="_blank" rel="noreferrer">View More</a>
-          </div>
-        </article>
-      </div>
+      <div class="project-grid" id="project-grid"></div>
     </section>
 
     <section class="contact" id="contact" aria-labelledby="contact-title">
       <div class="contact-wrap">
         <div>
-          <p class="eyebrow">Stay Tuned for More</p>
-          <h2 id="contact-title">Meanwhile, Let's Connect!</h2>
-          <p>Environmental engineering student at the University of Illinois, pursuing work in water resources, sustainable design, green infrastructure, and water treatment.</p>
+          <p class="eyebrow" data-contact-eyebrow>Stay Tuned for More</p>
+          <h2 id="contact-title" data-contact-title>Meanwhile, Let's Connect!</h2>
+          <p data-contact-text>Environmental engineering student at the University of Illinois, pursuing work in water resources, sustainable design, green infrastructure, and water treatment.</p>
         </div>
         <address class="contact-panel">
-          <a class="contact-row" href="tel:+19202544721"><span>Phone</span>(920) 254-4721</a>
-          <a class="contact-row" href="mailto:sthak36@illinois.edu"><span>Email</span>sthak36@illinois.edu</a>
-          <div class="contact-row"><span>Address</span>610 East John Street, Champaign, IL 61820</div>
+          <a class="contact-row" href="tel:+19202544721" data-phone><span>Phone</span><span data-phone-value>(920) 254-4721</span></a>
+          <a class="contact-row" href="mailto:sthak36@illinois.edu" data-email><span>Email</span><span data-email-value>sthak36@illinois.edu</span></a>
+          <div class="contact-row"><span>Address</span><span data-address>610 East John Street, Champaign, IL 61820</span></div>
         </address>
       </div>
     </section>
   </main>
 
+  <a class="edit-ribbon" href="https://github.com/infoshubhjain/stwebsite/edit/main/dist/content.json" target="_blank" rel="noreferrer">Edit Content</a>
   <footer>
-    <span>Sachi's Portfolio</span>
-    <span>Environmental Engineering at the University of Illinois</span>
+    <span data-footer-title>Sachi's Portfolio</span>
+    <span data-footer-school>Environmental Engineering at the University of Illinois</span>
   </footer>
+  <script src="app.js"></script>
 </body>
 </html>

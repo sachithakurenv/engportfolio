@@ -1,0 +1,72 @@
+{
+  "siteTitle": "Sachi's Portfolio",
+  "school": "Environmental Engineering at the University of Illinois",
+  "tagline": "One Water, sustainable design, green infrastructure, and water treatment.",
+  "intro": "Hello! My name is Sachi and I am studying Environmental Engineering. I am committed to developing sustainable solutions to the climate challenges we face today, with a focus on One Water within my degree.",
+  "heroNote": "Environmental Engineering portfolio rooted in Illinois engineering work.",
+  "profileTitle": "Water Resources Engineer goal",
+  "profileText": "Sustainable design, green infrastructure, water treatment",
+  "aboutTitle": "Focused on practical climate solutions.",
+  "aboutText": "Please navigate through the tabs located below this section that highlight my collaborative team projects and personal work which provide an overview of the work I have accomplished and my experiences.",
+  "aboutCards": [
+    {
+      "title": "Engineering Direction",
+      "text": "My goal is to be a Water Resources Engineer, where I can continue finding solutions for sustainable design, green infrastructure and water treatment."
+    },
+    {
+      "title": "Technical Toolkit",
+      "text": "My experience with CAD, technical writing, ArcGIS Pro, Power BI and leadership in team projects show my ability to deliver and manage high quality work."
+    },
+    {
+      "title": "Portfolio Guide",
+      "text": "Scroll and click through the buttons to explore collaborative team projects and personal work."
+    }
+  ],
+  "projectsTitle": "Selected Work",
+  "projectsText": "Geospatial analysis, CAD modeling, infrastructure feasibility, Excel applications, turbine modeling, and ArcGIS Pro analysis.",
+  "projects": [
+    {
+      "category": "Geospatial and energy systems",
+      "title": "Geospatial & Power Grid Analysis of Distributed Energy Resources",
+      "image": "https://static.wixstatic.com/media/6f8f9b_fbf4d2438aca406392bae2c9f8ea1322~mv2.png/v1/fill/w_1279,h_607,al_c,q_90,enc_avif,quality_auto/6f8f9b_fbf4d2438aca406392bae2c9f8ea1322~mv2.png",
+      "url": "https://sthak36.wixsite.com/myenvengportfolio"
+    },
+    {
+      "category": "CAD modeling",
+      "title": "Tractor Remodeling with Autodesk Fusion",
+      "image": "https://static.wixstatic.com/media/6f8f9b_d371c0e0140f40b0950434848558e610~mv2.jpg/v1/crop/x_30,y_142,w_1440,h_801/fill/w_1370,h_650,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/tractor.jpg",
+      "url": "https://sthak36.wixsite.com/myenvengportfolio"
+    },
+    {
+      "category": "Campus infrastructure",
+      "title": "Feasability Study on the North Engineering Quad at University of Illinois",
+      "image": "https://static.wixstatic.com/media/6f8f9b_669d426bfcf84d89980cf7458e6bf7c8~mv2.jpg/v1/fill/w_720,h_333,al_c,lg_1,q_80,enc_avif,quality_auto/6f8f9b_669d426bfcf84d89980cf7458e6bf7c8~mv2.jpg",
+      "url": "https://sthak36.wixsite.com/myenvengportfolio"
+    },
+    {
+      "category": "Excel analysis",
+      "title": "Industry Application of Excel Features",
+      "image": "https://static.wixstatic.com/media/6f8f9b_8e8129540c88449eb38fcea746a35c53~mv2.png/v1/fill/w_720,h_359,al_c,lg_1,q_85,enc_avif,quality_auto/6f8f9b_8e8129540c88449eb38fcea746a35c53~mv2.png",
+      "url": "https://sthak36.wixsite.com/myenvengportfolio"
+    },
+    {
+      "category": "Autodesk Fusion",
+      "title": "Modeling Turbines on Autodesk Fusion",
+      "image": "https://static.wixstatic.com/media/6f8f9b_e893f202c6d744deb641cbbaacf7c8a1~mv2.png/v1/fill/w_1370,h_634,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Screenshot%202025-12-07%20at%209_30_30%E2%80%AFAM.png",
+      "url": "https://sthak36.wixsite.com/myenvengportfolio"
+    },
+    {
+      "category": "ArcGIS Pro",
+      "title": "Spatiotemporal Analysis with ArcGIS Pro",
+      "image": "https://static.wixstatic.com/media/6f8f9b_b687ef50c6a84c48b4c529b1bf9c15d4~mv2.png/v1/crop/x_0,y_269,w_2479,h_1151/fill/w_1396,h_648,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Screenshot%202026-01-07%20at%208_59_edited.png",
+      "url": "https://sthak36.wixsite.com/myenvengportfolio"
+    }
+  ],
+  "contactEyebrow": "Stay Tuned for More",
+  "contactTitle": "Meanwhile, Let's Connect!",
+  "contactText": "Environmental engineering student at the University of Illinois, pursuing work in water resources, sustainable design, green infrastructure, and water treatment.",
+  "phone": "(920) 254-4721",
+  "phoneHref": "+19202544721",
+  "email": "sthak36@illinois.edu",
+  "address": "610 East John Street, Champaign, IL 61820"
+}
