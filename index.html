@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sachi's Portfolio | Environmental Engineering</title>
   <meta name="description" content="Environmental engineering portfolio focused on One Water, sustainable design, green infrastructure, water treatment, GIS, CAD, and technical analysis.">
+  <link rel="canonical" href="https://infoshubhjain.github.io/stwebsite/">
+  <meta property="og:title" content="Sachi's Portfolio | Environmental Engineering">
+  <meta property="og:description" content="Environmental engineering portfolio focused on sustainable design, water resources, GIS, CAD, and technical analysis.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://infoshubhjain.github.io/stwebsite/">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2307131f'/%3E%3Cpath d='M32 9c9 11 16 20 16 30a16 16 0 0 1-32 0c0-10 7-19 16-30z' fill='%232fd6c4'/%3E%3Cpath d='M22 40c7 4 14 4 21-1' fill='none' stroke='%23f4fbf9' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
   <style>
     :root {
@@ -146,7 +151,7 @@
       color: var(--white);
       background:
         linear-gradient(135deg, rgba(19, 41, 75, .94) 0%, rgba(16, 80, 96, .92) 54%, rgba(34, 100, 62, .92) 100%),
-        url("https://static.wixstatic.com/media/6f8f9b_3a8fd31e9fce4e0ca3c35cbf4b732f13~mv2.webp/v1/fill/w_840,h_305,al_c,lg_1,q_80,enc_avif,quality_auto/6f8f9b_3a8fd31e9fce4e0ca3c35cbf4b732f13~mv2.webp") center / cover;
+        url("assets/hero.webp") center / cover;
     }
 
     .hero::after {
@@ -250,7 +255,7 @@
       border-radius: .75rem;
       background:
         linear-gradient(180deg, transparent 35%, rgba(7, 19, 31, .9)),
-        url("https://static.wixstatic.com/media/6f8f9b_de9131e821a14401b378b02111df26e4~mv2.jpeg/v1/crop/x_263,y_0,w_1118,h_1066/fill/w_502,h_478,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Headshot.jpeg") center / cover;
+        url("assets/headshot.jpeg") center / cover;
       box-shadow: var(--shadow);
     }
 
@@ -435,6 +440,12 @@
       border-radius: .45rem;
     }
 
+    .project-gallery figure { margin: 0; }
+    .project-gallery figcaption { margin-top: .35rem; color: var(--muted); font-size: .78rem; line-height: 1.3; }
+    .education { padding-top: 0; }
+    .education .about-card { max-width: 72rem; margin: 0 auto; }
+    #socials { display: grid; gap: .75rem; }
+
     .project-links {
       display: flex;
       flex-wrap: wrap;
@@ -529,7 +540,7 @@
     body.watershed-mode .hero {
       background:
         linear-gradient(135deg, rgba(0, 105, 130, .9), rgba(19, 41, 75, .94)),
-        url("https://static.wixstatic.com/media/6f8f9b_3a8fd31e9fce4e0ca3c35cbf4b732f13~mv2.webp/v1/fill/w_840,h_305,al_c,lg_1,q_80,enc_avif,quality_auto/6f8f9b_3a8fd31e9fce4e0ca3c35cbf4b732f13~mv2.webp") center / cover;
+        url("assets/hero.webp") center / cover;
     }
 
     body.watershed-mode .project { border-color: rgba(0, 163, 173, .55); }
@@ -576,13 +587,14 @@
 <body>
   <header class="site-header">
     <a class="brand" href="#top" aria-label="Sachi's Portfolio home">
-      <img src="https://static.wixstatic.com/media/6f8f9b_8c6d0bd3441748e181d0ad957ebbf1e7~mv2.png/v1/fill/w_289,h_85,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/6f8f9b_8c6d0bd3441748e181d0ad957ebbf1e7~mv2.png" alt="University of Illinois Urbana-Champaign">
+      <img src="assets/illinois-logo.png" alt="University of Illinois Urbana-Champaign">
       <span data-site-title>Sachi's Portfolio</span>
     </a>
     <div class="header-actions">
       <nav aria-label="Main navigation">
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
+        <a href="resume.html">Resume</a>
         <a href="#contact">Contact</a>
       </nav>
       <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
@@ -602,10 +614,11 @@
           <p data-intro>Hello! My name is Sachi and I am studying Environmental Engineering. I am committed to developing sustainable solutions to the climate challenges we face today, with a focus on One Water within my degree.</p>
           <div class="hero-actions">
             <a class="button primary" href="#projects">View Projects</a>
-            <a class="button secondary" href="mailto:sthak36@illinois.edu">Connect</a>
+            <a class="button secondary" href="resume.html">Resume</a>
+            <a class="button secondary contact-link" href="mailto:sthak36@illinois.edu">Connect</a>
           </div>
           <div class="illinois-lockup">
-            <img src="https://static.wixstatic.com/media/6f8f9b_8c6d0bd3441748e181d0ad957ebbf1e7~mv2.png/v1/fill/w_578,h_170,al_c,lg_1,q_85,enc_avif,quality_auto/6f8f9b_8c6d0bd3441748e181d0ad957ebbf1e7~mv2.png" alt="University of Illinois Urbana-Champaign">
+            <img src="assets/illinois-logo.png" alt="University of Illinois Urbana-Champaign">
             <span data-hero-note>Environmental Engineering portfolio rooted in Illinois engineering work.</span>
           </div>
         </div>
@@ -626,6 +639,13 @@
       <div class="about-grid" id="about-cards"></div>
     </section>
 
+    <section class="education" aria-labelledby="education-title">
+      <article class="about-card">
+        <b id="education-title" data-education-title>Education and focus</b>
+        <p data-education-text>Environmental Engineering student at the University of Illinois Urbana-Champaign.</p>
+      </article>
+    </section>
+
     <section class="projects" id="projects" aria-labelledby="projects-title">
       <div class="section-head">
         <h2 id="projects-title" data-projects-title>Selected Work</h2>
@@ -644,13 +664,14 @@
         <address class="contact-panel">
           <a class="contact-row" href="tel:+19202544721" data-phone><span>Phone</span><span data-phone-value>(920) 254-4721</span></a>
           <a class="contact-row" href="mailto:sthak36@illinois.edu" data-email><span>Email</span><span data-email-value>sthak36@illinois.edu</span></a>
-          <div class="contact-row"><span>Address</span><span data-address>610 East John Street, Champaign, IL 61820</span></div>
+          <div class="contact-row"><span>Location</span><span data-location>Champaign, Illinois</span></div>
+          <div id="socials"></div>
         </address>
       </div>
     </section>
   </main>
 
-  <a class="edit-ribbon" href="https://github.com/infoshubhjain/stwebsite/edit/main/dist/content.json" target="_blank" rel="noreferrer">Edit Content</a>
+  <a class="edit-ribbon" href="edit.html">Edit Content</a>
   <footer>
     <span data-footer-title>Sachi's Portfolio</span>
     <span data-footer-school>Environmental Engineering at the University of Illinois</span>

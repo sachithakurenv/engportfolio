@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Resume for Sachi, an Environmental Engineering student at the University of Illinois Urbana-Champaign.">
+  <link rel="canonical" href="https://infoshubhjain.github.io/stwebsite/resume.html">
+  <title>Resume | Sachi's Portfolio</title>
+  <style>
+    :root { --ink:#13294b; --muted:#53656b; --line:#d7e5e1; --accent:#ff5f05; }
+    * { box-sizing:border-box; } body { max-width:850px; margin:0 auto; padding:3rem 2rem; color:var(--ink); font-family:Arial,sans-serif; line-height:1.5; }
+    a { color:inherit; } header { display:flex; justify-content:space-between; align-items:center; gap:1rem; padding-bottom:1.5rem; border-bottom:5px solid var(--accent); } h1 { margin:0; font-size:2.5rem; } h2 { margin:2rem 0 .6rem; font-size:1rem; letter-spacing:.08em; text-transform:uppercase; } p { margin:.4rem 0; } .muted { color:var(--muted); } ul { padding-left:1.25rem; } li { margin:.7rem 0; } .actions { display:flex; gap:.8rem; } button, .back { padding:.55rem .75rem; color:var(--ink); background:#fff; border:1px solid var(--line); border-radius:.25rem; font:inherit; font-weight:700; text-decoration:none; cursor:pointer; }
+    @media print { body { padding:0; } .actions { display:none; } }
+  </style>
+</head>
+<body id="resume-page">
+  <header>
+    <div><h1 data-resume-name>Sachi</h1><p class="muted">Environmental Engineering student | University of Illinois Urbana-Champaign</p></div>
+    <div class="actions"><a class="back" href="index.html">Portfolio</a><button type="button" onclick="print()">Print / Save PDF</button></div>
+  </header>
+  <section><h2 data-resume-school>Education and focus</h2><p data-resume-focus></p></section>
+  <section><h2>Profile</h2><p data-resume-summary></p></section>
+  <section><h2>Selected project work</h2><ul id="resume-projects"></ul></section>
+  <section><h2>Contact</h2><p><span data-resume-email></span> | <span data-resume-phone></span></p></section>
+  <script src="app.js"></script>
+</body>
+</html>
