@@ -62,13 +62,52 @@ function renderProjects(projects) {
     const title = document.createElement("h3");
     title.textContent = project.title;
 
-    const link = document.createElement("a");
-    link.href = project.url;
-    link.target = "_blank";
-    link.rel = "noreferrer";
-    link.textContent = "View More";
+    const summaryText = document.createElement("p");
+    summaryText.className = "project-summary";
+    summaryText.textContent = project.summary || "";
 
-    body.append(category, title, link);
+    const details = document.createElement("details");
+    const summary = document.createElement("summary");
+    summary.textContent = "Open full project details";
+    const detailWrap = document.createElement("div");
+    detailWrap.className = "project-detail";
+
+    for (const section of project.details || []) {
+      const heading = document.createElement("h4");
+      heading.textContent = section.heading;
+      const text = document.createElement("p");
+      text.textContent = section.text;
+      detailWrap.append(heading, text);
+    }
+
+    if (project.gallery?.length) {
+      const gallery = document.createElement("div");
+      gallery.className = "project-gallery";
+      for (const src of project.gallery) {
+        const galleryImage = document.createElement("img");
+        galleryImage.src = src;
+        galleryImage.alt = "";
+        gallery.append(galleryImage);
+      }
+      detailWrap.append(gallery);
+    }
+
+    if (project.links?.length) {
+      const links = document.createElement("div");
+      links.className = "project-links";
+      for (const item of project.links) {
+        const link = document.createElement("a");
+        link.href = item.url;
+        link.target = "_blank";
+        link.rel = "noreferrer";
+        link.textContent = item.label;
+        links.append(link);
+      }
+      detailWrap.append(links);
+    }
+
+    details.append(summary, detailWrap);
+    body.append(category, title, summaryText, details);
     card.append(image, body);
     return card;
   }));

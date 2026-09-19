@@ -29,37 +29,228 @@
       "category": "Geospatial and energy systems",
       "title": "Geospatial & Power Grid Analysis of Distributed Energy Resources",
       "image": "https://static.wixstatic.com/media/6f8f9b_fbf4d2438aca406392bae2c9f8ea1322~mv2.png/v1/fill/w_1279,h_607,al_c,q_90,enc_avif,quality_auto/6f8f9b_fbf4d2438aca406392bae2c9f8ea1322~mv2.png",
-      "url": "https://sthak36.wixsite.com/myenvengportfolio"
+      "url": "https://sthak36.wixsite.com/myenvengportfolio/team-3",
+      "summary": "An 11-week geospatial and analytics study of Distributed Energy Resource adoption across ComEd territory using ArcGIS Pro and Power BI.",
+      "details": [
+        {
+          "heading": "Project scope",
+          "text": "Developed interactive maps and dashboards to quantify environmental benefits, grid impacts, peak load reduction, and financial opportunities from distributed energy resources for ComEd customers in northern Illinois."
+        },
+        {
+          "heading": "Deliverables",
+          "text": "Power BI dashboard, ArcGIS map layers, and an executive PowerPoint deck covering DER impacts, load and peak offset, EIEC communities, community solar capacity, feeder density, and project distribution by size and installation year."
+        },
+        {
+          "heading": "Skills used",
+          "text": "GIS and geospatial analysis, geodatabase management, geocoding, ArcGIS Pro geoprocessing, pairwise clip, boundary overlay, spatial selection, attribute joins, ZIP/county/census aggregation, hot spot analysis, kernel density mapping, weighted overlay, ArcGIS Online, Power BI, DAX, Power Query, KPI tracking, carbon equivalency calculations, XLOOKUP, VLOOKUP, MATCH, COUNTIF, and SUMIF."
+        }
+      ],
+      "gallery": [
+        "https://static.wixstatic.com/media/6f8f9b_fbf4d2438aca406392bae2c9f8ea1322~mv2.png/v1/fill/w_1279,h_607,al_c,q_90,enc_avif,quality_auto/6f8f9b_fbf4d2438aca406392bae2c9f8ea1322~mv2.png",
+        "https://static.wixstatic.com/media/6f8f9b_f735d9654c2b42958ecb73f959e32b54~mv2.png/v1/fill/w_1370,h_650,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/6f8f9b_f735d9654c2b42958ecb73f959e32b54~mv2.png"
+      ],
+      "links": [
+        {
+          "label": "Original project page",
+          "url": "https://sthak36.wixsite.com/myenvengportfolio/team-3"
+        }
+      ]
     },
     {
       "category": "CAD modeling",
       "title": "Tractor Remodeling with Autodesk Fusion",
       "image": "https://static.wixstatic.com/media/6f8f9b_d371c0e0140f40b0950434848558e610~mv2.jpg/v1/crop/x_30,y_142,w_1440,h_801/fill/w_1370,h_650,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/tractor.jpg",
-      "url": "https://sthak36.wixsite.com/myenvengportfolio"
+      "url": "https://sthak36.wixsite.com/myenvengportfolio/portfolio-collections/my-portfolio",
+      "summary": "A semester-long reverse engineering project completed with four teammates, moving from disassembly and measurement to a realistic Fusion 360 assembly.",
+      "details": [
+        {
+          "heading": "Project scope",
+          "text": "The chosen tractor toy was disassembled, documented, measured, and modeled in Fusion over three months, producing an accurate 3D assembly with realistic dimensions and materials."
+        },
+        {
+          "heading": "Personal contribution",
+          "text": "Modeled the bottom assembly of the tractor in Autodesk Fusion 360 using more than 115 sketches, angular and tangent planes, hole and shell features, chamfers, lofts, circular patterns, press-pull operations, and a rotating joint for alignment."
+        },
+        {
+          "heading": "Assembly refinement",
+          "text": "Combined the tractor base and cart top into a subassembly, then revised sketches and dimensions so features fit correctly and avoided interference."
+        },
+        {
+          "heading": "Static stress analysis",
+          "text": "Used Fusion 360's Simulation Workspace to test material performance at the connection between the rear cart and tractor body. A 6-pound force represented rough play. LDPE showed high Von Mises stress and displacement, while wrought iron performed more reasonably."
+        },
+        {
+          "heading": "Technical report contribution",
+          "text": "Direct contributions included product description and background, product story, black box diagram, market segment analysis, proposed improvements, cart bottom 3D design, and stress analysis."
+        }
+      ],
+      "gallery": [
+        "https://static.wixstatic.com/media/6f8f9b_d371c0e0140f40b0950434848558e610~mv2.jpg/v1/crop/x_30,y_142,w_1440,h_801/fill/w_1370,h_650,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/tractor.jpg",
+        "https://static.wixstatic.com/media/6f8f9b_d72321916f764a8d8a964a1329fb0640~mv2.jpg/v1/crop/x_370,y_0,w_2141,h_1226/fill/w_1370,h_670,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/full%20asembly%20render_edited.jpg"
+      ],
+      "links": [
+        {
+          "label": "Original project page",
+          "url": "https://sthak36.wixsite.com/myenvengportfolio/portfolio-collections/my-portfolio"
+        },
+        {
+          "label": "View report",
+          "url": "https://c450eb95-d720-4328-a51b-3288cb87ff97.filesusr.com/ugd/6f8f9b_6ce6ee6ac36b43f99888b7be4988ab05.pdf"
+        }
+      ]
     },
     {
       "category": "Campus infrastructure",
       "title": "Feasability Study on the North Engineering Quad at University of Illinois",
       "image": "https://static.wixstatic.com/media/6f8f9b_669d426bfcf84d89980cf7458e6bf7c8~mv2.jpg/v1/fill/w_720,h_333,al_c,lg_1,q_80,enc_avif,quality_auto/6f8f9b_669d426bfcf84d89980cf7458e6bf7c8~mv2.jpg",
-      "url": "https://sthak36.wixsite.com/myenvengportfolio"
+      "url": "https://sthak36.wixsite.com/myenvengportfolio/portfolio-collections/my-portfolio/project-title-3",
+      "summary": "A feasibility study evaluating whether a rain garden could manage stormwater on the UIUC North Engineering Quad.",
+      "details": [
+        {
+          "heading": "Objective",
+          "text": "Determine the feasibility of adding a new rain garden to the North Engineering Quad on the University of Illinois campus."
+        },
+        {
+          "heading": "Methodologies",
+          "text": "Studied site conditions, soil compaction, slope, drainage infrastructure, and pedestrian traffic. Collected site measurements, researched rainfall data, reviewed comparable case studies, and completed a parametric cost analysis."
+        },
+        {
+          "heading": "Interpretation",
+          "text": "Identified a rain garden location that could reduce flooding without disrupting daily campus activity, while improving infiltration, reducing runoff, and supporting plant biodiversity."
+        },
+        {
+          "heading": "Conclusion",
+          "text": "A rain garden near the east side of the North Engineering Quad would be a low-cost and effective stormwater management solution for the University."
+        },
+        {
+          "heading": "Direct contributions",
+          "text": "Contributed the introduction, objectives, Table 1, and acknowledgments sections of the report."
+        }
+      ],
+      "links": [
+        {
+          "label": "Original project page",
+          "url": "https://sthak36.wixsite.com/myenvengportfolio/portfolio-collections/my-portfolio/project-title-3"
+        },
+        {
+          "label": "View report",
+          "url": "https://c450eb95-d720-4328-a51b-3288cb87ff97.filesusr.com/ugd/6f8f9b_6ce6ee6ac36b43f99888b7be4988ab05.pdf"
+        }
+      ]
     },
     {
       "category": "Excel analysis",
       "title": "Industry Application of Excel Features",
       "image": "https://static.wixstatic.com/media/6f8f9b_8e8129540c88449eb38fcea746a35c53~mv2.png/v1/fill/w_720,h_359,al_c,lg_1,q_85,enc_avif,quality_auto/6f8f9b_8e8129540c88449eb38fcea746a35c53~mv2.png",
-      "url": "https://sthak36.wixsite.com/myenvengportfolio"
+      "url": "https://sthak36.wixsite.com/myenvengportfolio/excel",
+      "summary": "Excel-based engineering analysis covering hydropower output, energy comparison, and campus construction cost estimation.",
+      "details": [
+        {
+          "heading": "Excel data report and hydropower analysis",
+          "text": "Imported daily river discharge data from USGS into Excel, applied turbine specifications and a hydroelectric power equation, calculated mean daily power output for a proposed Lake Decatur dam turbine installation, graphed the results, and summarized the work in a technical memo."
+        },
+        {
+          "heading": "Excel energy analysis",
+          "text": "Analyzed five years of Lake Decatur river flow data to estimate daily energy production for a hydropower facility. Built a mass curve, used Excel's LINEST function to estimate average daily energy production, and compared hydropower generation against solar power assumptions."
+        },
+        {
+          "heading": "Campus construction cost analysis",
+          "text": "Completed a concrete construction cost analysis from Campus Instructional Facility to Springfield Avenue using hourly labor rates and unit prices for concrete and pavement materials."
+        }
+      ],
+      "gallery": [
+        "https://static.wixstatic.com/media/6f8f9b_8e8129540c88449eb38fcea746a35c53~mv2.png/v1/fill/w_720,h_359,al_c,lg_1,q_85,enc_avif,quality_auto/6f8f9b_8e8129540c88449eb38fcea746a35c53~mv2.png"
+      ],
+      "links": [
+        {
+          "label": "Original project page",
+          "url": "https://sthak36.wixsite.com/myenvengportfolio/excel"
+        },
+        {
+          "label": "View memo",
+          "url": "https://c450eb95-d720-4328-a51b-3288cb87ff97.filesusr.com/ugd/6f8f9b_87fbfccbf8c7466cbc35f38a0c2b3121.pdf"
+        },
+        {
+          "label": "View estimation",
+          "url": "https://c450eb95-d720-4328-a51b-3288cb87ff97.filesusr.com/ugd/6f8f9b_671db26c61dc4082aa907aecb974a7a8.pdf"
+        }
+      ]
     },
     {
       "category": "Autodesk Fusion",
       "title": "Modeling Turbines on Autodesk Fusion",
       "image": "https://static.wixstatic.com/media/6f8f9b_e893f202c6d744deb641cbbaacf7c8a1~mv2.png/v1/fill/w_1370,h_634,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Screenshot%202025-12-07%20at%209_30_30%E2%80%AFAM.png",
-      "url": "https://sthak36.wixsite.com/myenvengportfolio"
+      "url": "https://sthak36.wixsite.com/myenvengportfolio/s-projects-basic",
+      "summary": "Fusion 360 modeling work exploring horizontal-axis, spiral, and vertical-axis wind turbine design techniques.",
+      "details": [
+        {
+          "heading": "Horizontal axis wind turbine",
+          "text": "Sketched an airfoil profile with the three-point slot tool, created offset planes along the span, redrew airfoils at varying distances, lofted the profiles with a spline rail, and finished the model with circular patterning and fillets."
+        },
+        {
+          "heading": "Spiral wind turbine",
+          "text": "Created a coil, adjusted height and section size, iterated on angle values until the ends touched, revolved a rectangle with circular ends for the center pole, then added fillets and patterned features."
+        },
+        {
+          "heading": "Vertical axis wind turbine",
+          "text": "Extruded a central pole, circularly patterned three airfoil-shaped wings around the axis, and formed connections between the pole and wings using the pipe tool with multiple offset planes for alignment."
+        }
+      ],
+      "gallery": [
+        "https://static.wixstatic.com/media/6f8f9b_e893f202c6d744deb641cbbaacf7c8a1~mv2.png/v1/fill/w_1370,h_634,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Screenshot%202025-12-07%20at%209_30_30%E2%80%AFAM.png"
+      ],
+      "links": [
+        {
+          "label": "Original project page",
+          "url": "https://sthak36.wixsite.com/myenvengportfolio/s-projects-basic"
+        }
+      ]
     },
     {
       "category": "ArcGIS Pro",
       "title": "Spatiotemporal Analysis with ArcGIS Pro",
       "image": "https://static.wixstatic.com/media/6f8f9b_b687ef50c6a84c48b4c529b1bf9c15d4~mv2.png/v1/crop/x_0,y_269,w_2479,h_1151/fill/w_1396,h_648,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Screenshot%202026-01-07%20at%208_59_edited.png",
-      "url": "https://sthak36.wixsite.com/myenvengportfolio"
+      "url": "https://sthak36.wixsite.com/myenvengportfolio/copy-of-excel",
+      "summary": "ArcGIS Pro analysis of PM2.5 pollutant patterns using multidimensional mosaics, raster layers, space-time cubes, and hot spot analysis.",
+      "details": [
+        {
+          "heading": "Part 1",
+          "text": "Global PM2.5 data was explored using multidimensional mosaics, raster layers, and space-time cubes. A standard deviation stretch highlighted high and low pollution areas. A mosaic dataset was converted into a raster layer with 19 years of time-enabled data, and yearly PM2.5 changes were visualized through animation."
+        },
+        {
+          "heading": "Part 2",
+          "text": "Created a temporal profile chart comparing PM2.5 trends in the United Kingdom, Norway, and Italy from 1998 to 2016, using extracted annual values and World Health Organization PM2.5 guidelines."
+        },
+        {
+          "heading": "Part 3",
+          "text": "Used Emerging Hot Spot Analysis with Getis-Ord Gi* statistics and the Mann-Kendall trend test to identify persistent, intensifying, and diminishing PM2.5 patterns. Ethiopia was selected for a detailed 3D case study."
+        }
+      ],
+      "gallery": [
+        "https://static.wixstatic.com/media/6f8f9b_b687ef50c6a84c48b4c529b1bf9c15d4~mv2.png/v1/crop/x_0,y_269,w_2479,h_1151/fill/w_1396,h_648,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Screenshot%202026-01-07%20at%208_59_edited.png"
+      ],
+      "links": [
+        {
+          "label": "Original project page",
+          "url": "https://sthak36.wixsite.com/myenvengportfolio/copy-of-excel"
+        },
+        {
+          "label": "View map",
+          "url": "https://c450eb95-d720-4328-a51b-3288cb87ff97.filesusr.com/ugd/6f8f9b_5cd4307728394f5ba3656222c65fb98d.pdf"
+        },
+        {
+          "label": "View second map",
+          "url": "https://c450eb95-d720-4328-a51b-3288cb87ff97.filesusr.com/ugd/6f8f9b_51732de40f6c490e8ed8e4a6d9412eee.pdf"
+        },
+        {
+          "label": "View 2D map",
+          "url": "https://c450eb95-d720-4328-a51b-3288cb87ff97.filesusr.com/ugd/6f8f9b_2f1c815184cc413589d19752d41a403f.pdf"
+        },
+        {
+          "label": "View 3D map",
+          "url": "https://c450eb95-d720-4328-a51b-3288cb87ff97.filesusr.com/ugd/6f8f9b_73f533b685324730bddde0f9c2919d03.pdf"
+        }
+      ]
     }
   ],
   "contactEyebrow": "Stay Tuned for More",

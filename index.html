@@ -377,6 +377,58 @@
       line-height: 1.15;
     }
 
+    .project-summary {
+      margin: 0 0 1rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .project details {
+      padding-top: .7rem;
+      border-top: 1px solid var(--line);
+    }
+
+    .project summary {
+      cursor: pointer;
+      color: var(--ink);
+      font-weight: 900;
+    }
+
+    .project-detail {
+      padding-top: .9rem;
+    }
+
+    .project-detail h4 {
+      margin: 1rem 0 .35rem;
+      font-size: 1rem;
+    }
+
+    .project-detail p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+
+    .project-gallery {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: .55rem;
+      margin-top: 1rem;
+    }
+
+    .project-gallery img {
+      height: 7.5rem;
+      border: 1px solid var(--line);
+      border-radius: .45rem;
+    }
+
+    .project-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .55rem;
+      margin-top: 1rem;
+    }
+
     .project a {
       display: inline-flex;
       align-items: center;
@@ -384,6 +436,14 @@
       color: var(--ink);
       font-weight: 900;
       text-decoration: none;
+    }
+
+    .project-links a {
+      padding: .55rem .7rem;
+      background: rgba(255, 95, 5, .12);
+      border: 1px solid rgba(255, 95, 5, .28);
+      border-radius: .45rem;
+      font-size: .9rem;
     }
 
     .project a::after { content: "↗"; }
@@ -491,6 +551,7 @@
       }
       .hero-inner { min-height: auto; }
       .profile-card { min-height: 27rem; }
+      .project-gallery { grid-template-columns: 1fr; }
       .illinois-lockup { align-items: flex-start; flex-direction: column; }
       .section-head { display: block; }
       .section-head p { margin-top: 1rem; }
