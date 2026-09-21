@@ -138,7 +138,7 @@ function renderProjectPage(content) {
   setText("[data-project-title]", project.title);
   setText("[data-project-summary]", project.summary);
   const image = $("[data-project-image]");
-  image.src = project.detailImage || project.image;
+  image.src = project.image;
   image.alt = project.title;
   renderProjectDetail(project, $("#project-detail"));
 }
