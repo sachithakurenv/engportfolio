@@ -1,14 +1,14 @@
-# stwebsite
+# engportfolio
 
 Portfolio site for Sachi, deployed with GitHub Pages.
 
 ## How to edit
 
-Open `dist/edit.html` on the live site for the visual editor. It previews changes in the browser and downloads an updated `content.json` ready to upload to GitHub. The same file controls the visible text, contact info, project titles, project links, and image URLs.
+Open https://sachithakurenv.github.io/engportfolio/edit.html for the visual editor (there is no public Edit button). Make changes, click **Preview changes**, then **Download content.json**. To publish, someone with repository write access can click **Publish on GitHub**, upload the downloaded file to the `gh-pages` branch, and commit it. Without access, send the file to the repository owner. The editor covers basic text and project titles/summaries; other fields can be changed in `dist/content.json` on GitHub. Also copy published changes to `main/dist/content.json` so a future full deployment does not overwrite them.
 
-After committing a change, GitHub Pages redeploys automatically. The live site updates in about a minute:
+After committing to `gh-pages`, GitHub Pages redeploys automatically. The live site updates in about a minute:
 
-https://infoshubhjain.github.io/stwebsite/
+https://sachithakurenv.github.io/engportfolio/
 
 ## What not to edit
 
