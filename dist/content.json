@@ -220,7 +220,7 @@
       "category": "Autodesk Fusion",
       "slug": "fusion-wind-turbines",
       "title": "Modeling Turbines on Autodesk Fusion",
-      "image": "assets/6f8f9b_e893f202c6d744deb641cbbaacf7c8a1~mv2.png",
+      "image": "assets/autodesk-fusion-360.jpeg",
       "url": "https://sthak36.wixsite.com/myenvengportfolio/s-projects-basic",
       "summary": "Fusion 360 modeling work exploring horizontal-axis, spiral, and vertical-axis wind turbine design techniques.",
       "details": [
@@ -238,7 +238,7 @@
         }
       ],
       "gallery": [
-        { "src": "assets/6f8f9b_e893f202c6d744deb641cbbaacf7c8a1~mv2.png", "alt": "Fusion turbine project visual" },
+        { "src": "assets/autodesk-fusion-360.jpeg", "alt": "Autodesk Fusion 360" },
         { "src": "assets/6f8f9b_f22f2ea564a54652aeb7b5a8aa059a50~mv2.png", "alt": "Horizontal axis wind turbine" },
         { "src": "assets/6f8f9b_569d93e2ffbd4da7b15ac413c359e574~mv2.png", "alt": "Spiral wind turbine" },
         { "src": "assets/6f8f9b_78c02d68eb2e489ebb5f4f7fd552df68~mv2.png", "alt": "Vertical axis wind turbine" }
