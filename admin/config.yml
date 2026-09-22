@@ -1,0 +1,88 @@
+# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json
+
+backend:
+  name: github
+  repo: sachithakurenv/engportfolio
+  branch: gh-pages
+
+media_folder: assets
+public_folder: assets
+site_url: https://sachithakurenv.github.io/engportfolio
+
+collections:
+  - name: portfolio
+    label: Portfolio
+    files:
+      - name: content
+        label: Website content
+        file: content.json
+        format: json
+        fields:
+          - { name: siteTitle, label: Site title, widget: string }
+          - { name: school, label: School line, widget: string }
+          - { name: tagline, label: Tagline, widget: text }
+          - { name: intro, label: Introduction, widget: text }
+          - { name: heroNote, label: Hero note, widget: text }
+          - { name: profileTitle, label: Profile title, widget: string }
+          - { name: profileText, label: Profile text, widget: text }
+          - { name: aboutTitle, label: About title, widget: string }
+          - { name: aboutText, label: About text, widget: text }
+          - name: aboutCards
+            label: About cards
+            widget: list
+            fields:
+              - { name: title, label: Title, widget: string }
+              - { name: text, label: Text, widget: text }
+          - name: education
+            label: Education
+            widget: object
+            fields:
+              - { name: title, label: Title, widget: string }
+              - { name: text, label: Text, widget: text }
+          - { name: projectsTitle, label: Projects title, widget: string }
+          - { name: projectsText, label: Projects introduction, widget: text }
+          - name: projects
+            label: Projects
+            widget: list
+            summary: '{{fields.title}}'
+            fields:
+              - { name: category, label: Category, widget: string }
+              - { name: slug, label: Project ID, widget: string, hint: 'Leave unchanged.' }
+              - { name: title, label: Title, widget: string }
+              - { name: image, label: Main image, widget: image }
+              - { name: url, label: Original project link, widget: string, required: false }
+              - { name: summary, label: Summary, widget: text }
+              - name: details
+                label: Project sections
+                widget: list
+                fields:
+                  - { name: heading, label: Heading, widget: string }
+                  - { name: text, label: Text, widget: text }
+              - name: gallery
+                label: Gallery images
+                widget: list
+                required: false
+                fields:
+                  - { name: src, label: Image, widget: image }
+                  - { name: alt, label: Image description, widget: string }
+              - name: links
+                label: Project links
+                widget: list
+                required: false
+                fields:
+                  - { name: label, label: Button text, widget: string }
+                  - { name: url, label: Link, widget: string }
+          - { name: email, label: Email, widget: string }
+          - { name: phone, label: Phone, widget: string }
+          - { name: phoneHref, label: Phone link, widget: string, hint: 'Numbers only, starting with +.' }
+          - { name: location, label: Location, widget: string }
+          - name: socials
+            label: Social links
+            widget: list
+            required: false
+            fields:
+              - { name: label, label: Name, widget: string }
+              - { name: url, label: Link, widget: string }
+          - { name: contactEyebrow, label: Contact eyebrow, widget: string }
+          - { name: contactTitle, label: Contact title, widget: string }
+          - { name: contactText, label: Contact text, widget: text }
